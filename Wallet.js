@@ -5,7 +5,7 @@ class Wallet {
         this.getWalletValue = () => _money;
 
         this.checkCanPlay = (value) => {
-            if (value >= _money) return true;
+            if (value <= _money) return true;
             return false;
         }
         this.changeWallet = (value, type = "+") => {
