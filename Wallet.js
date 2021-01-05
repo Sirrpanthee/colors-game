@@ -15,11 +15,11 @@ class Wallet {
                 } else if (type === "-") {
                     return _money -= value;
                 } else {
-                    throw new Error("Nieprawidłowy typ działania!");
+                    throw new Error("Invalid type!");
                 }
             }
             else {
-                throw new Error("Nieprawidłowa liczba!")
+                throw new Error("Invalid number!");
             }
         }
 

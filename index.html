@@ -5,18 +5,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Jednoręki bandyta</title>
+  <title>Colors roulette</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <div class="wrap">
 
-    <h1>Jednoręki bandyta</h1>
+    <h1>Colors roulette</h1>
 
-    <h2>Zasady gry</h2>
+    <h2>Game rules</h2>
 
-    <p>Gracz obstawia daną stawkę, po czym losowane są trzy kolory z puli: <span id="red">czerwony</span>, <span id="green">zielony</span> lub <span id="blue">niebieski</span>. Gracz wygrywa <span>3-krotność</span> swojej stawki w przypadku wylosowania:<br>- danego koloru dokładnie jeden raz <br>- trzech takich samych kolorów<br>W każdym innym przypadku traci obstawionę kwotę. Miłej gry :)</p>
+    <p id="game-rules">You start with 200$. When you place a bet and click <strong>Spin!</strong>, 3 rectangles gain a color from the
+      pool (<span id="red">red</span>, <span id="green">green</span> or <span id="blue">blue</span>). You win
+      <strong>2x</strong>
+      the amount you bet
+      if all the rectangles are of the same color(e.g. all rectangles are <span id="blue">blue</span>) or each rectangle
+      has a different color (e.g. 1 <span id="blue">blue</span>, 1 <span id="red">red</span> and 1 <span
+        id="green">green</span>). You lose in every other case therefore losing the amount you bet. Good luck!</p>
 
     <section class="game">
       <div class="color"></div>
@@ -25,15 +33,15 @@
     </section>
 
     <section class="play">
-      <input type="number" placeholder="Podaj stawkę" id="bid">
-      <button id="start">Zakręć!</button>
+      <input type="number" placeholder="Place a bet" id="bid">
+      <button id="start">Spin!</button>
     </section>
 
-    <section class="panel">TWOJE SRODKI PRZED KOLEJNĄ GRĄ TO: <span class="wallet"></span></section>
+    <section class="panel">Your money: <span class="wallet"></span><strong>$</strong></section>
 
     <section class="score">
-      <span class="result"></span> Za tobą <span class="number"></span> gier, w tym <span class="win"></span> wygranych
-      i <span class="loss"></span> przegranych
+      <span class="result"></span> You've played <span class="number"></span> games: <span class="win"></span> wins
+      and <span class="loss"></span> losses
     </section>
 
   </div>
