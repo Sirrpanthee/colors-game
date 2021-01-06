@@ -5,7 +5,8 @@
 }
 
 body {
-    background-color: #F0FFFF;
+    background: url(https://www.sswriter.com/wp-content/uploads/2015/06/color-background.jpg);
+    background-size: cover;
 }
 
 #game-rules {
